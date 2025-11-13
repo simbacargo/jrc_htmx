@@ -82,7 +82,7 @@ DATABASES = {
     }
 }
 
-DATABASE = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'jrcdb',
