@@ -5,7 +5,7 @@ class Sermon(models.Model):
     topic =models.CharField(max_length=200)
     preacher = models.CharField(max_length=100)
     date = models.DateField()
-    audio_file = models.FileField(upload_to='sermons/audio/')
+    audio_file = models.FileField(upload_to='sermons/audio/', blank=True, null=True,max_length=200)
     video_file = models.FileField(upload_to='sermons/video/', blank=True, null=True)
     notes = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
