@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<img src="{% static 'images/5.jpg' %}" alt="Django Logo" width="100%" class="carousel-image">
+<style>
+.carousel-image {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    top: 10px;
+}
+.carousel-image:hover {
+    /* transform: scale(.05); */
+}
+</style>
+{% endblock %}
